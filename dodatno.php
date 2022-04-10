@@ -12,7 +12,6 @@
                     background: url('https://croatia.hr/sites/default/files/styles/image_full_width/public/2018-08/bol-zlatni-rat-ivo-biocina-1.jpg?itok=8nn25Gi0') no-repeat center fixed;
                     background-size: cover;
                 }  
-            }
             </style>
             <?php
                 $ID_Brod=$_GET['id'];

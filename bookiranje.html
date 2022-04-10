@@ -14,15 +14,29 @@
                 }  
             </style>
             <form action="forma.php" method="post">
+                <!-- 
+                    Na tvom mistu bi odvojila ime i prezime u 2 razlicite varijable
+                -->
+                <!-- 
+                    Label mozes vezat direktno na input filedsa ovim for="", i bilo bi pametno
+                    da se stavi required parametar ko sta san dodala na email mobitel. 
+                    Prominila san i date field da bude tipa date, triban samo u bazi viditti ostalo kako spojit
+                -->
                 <label>Ime i prezime: </label></br>
                 <input type="text" name="ImePrezime"></br>
                 <label>E-mail </label></br>
-                <input type="text" name="Email"></br>
+                <!-- 
+                    sta se tice tipa podataka probaj se drzat ovih koji postoje defaultni npr 
+                    za email i mobitel. da budu u pravom obliku
+                    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
+                 -->
+                <input type="email" name="Email" placeholder="Type here email" required></br>
                 <label>Broj mobitela: </label></br>
-                <input type="text" name="Mobitel"></br>
-                <label>Datum: </label></br>
-                <input type="text" name="Od"></br>
-                <input type="text" name="Do"></br></br>
+                <input type="text" name="Mobitel"placeholder="Type here phone number" required></br>
+                <label for="date_from">Datum od: </label></br>
+                <input type="date" name="date_from" hint="Select date from" required></br>
+                <label for="date_to">Datum do: </label></br>
+                <input type="date" name="date_to" hint="Select date to" required></br></br>
                 <input type="submit" value="Submit">
                 <div></div>
             <form>
