@@ -29,7 +29,7 @@
                         while ($row = mysqli_fetch_array($records)) {
                             echo "
                             <div id=".$row['ID']." class='card' style='width:350px; height:300px; background-color:rgba(255,255,255,0.6); margin:25px'>
-                                <a href='dodatno.php? id=".$row['ID']."'> 
+                                <a href='dodatno.php?id=".$row['ID']."'> 
                                 <img class='card' src='".$row['link_slika']."' alt='Card image' style='width:300px; margin-left:15px;margin-top:20px'>
                                 <h4 style='margin-left:15px'>".$row['model']."</h4>
                             </div>";       
